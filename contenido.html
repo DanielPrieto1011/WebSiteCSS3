@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+	<head>
+		<title>Contenido Css 3</title>
+		<meta name="author" content="Daniel Prieto" />
+		<meta name="description" content="Css3, Estilos Internos Y Externos, Selectores"/>
+		<meta name="keywords" content="css, css3, estilos internos, estilos externos, selectores, etiquetas css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a style="color: #f5b041" href="index.html" class="logo"><strong style="color: #1b4f72">Editado Por</strong> Daniel Alejandro Prieto Arias</a>
+									<img src="images/unad.jpg" width="600" heigh="150">
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									
+									<header class="main">
+										<h1>Contenido CCS 3</h1>
+									</header>
+
+									<span><a href="http://codehints.in/a-simple-example-of-css-variable/"  target="_blank" class="image main"><img src="images/pic11.jpg" alt="banner css3" width="1280" height="316" /></a></span>	
+
+									<p align="justify">Oficialmente CSS nada tiene que ver con HTML5. CSS no es parte de la especificación y nunca lo fue. Este lenguaje es, de hecho, un complemento desarrollado para superar las limitaciones y reducir la complejidad de HTML. Al comienzo, atributos dentro de las etiquetas HTML proveían estilos esenciales para cada elemento, pero a medida que el lenguaje evolucionó, la estructura de código se volvió más compleja y HTML por sí mismo no puedo más satisfacer las demandas de diseñadores. En consecuencia, CSS pronto fue adoptado Como la forma de separar la estructura de presentación. Desde entonces, CSS ha crecido y ganó importancia, pero siempre desarrollado en paralelo, enfocado en las necesidades de los diseñadores y apartado del proceso de evolución de html.</p>
+
+                                    <p align="justify">La versión 3 de CSS sigue el mismo camino, pero esta vez con un mayor compromiso. La especificación de HTML5 fue desarrollada considerando CSS a cargo del diseño. Debido a esta consideración la integración entre HTML y CSS es ahora vital para el desarrollo web Y esta es la razón por la que cada vez que mencionamos HTML5 también estamos haciendo referencia a CSS3, aunque oficialmente se trate de dos tecnologías completamente separadas.</p>
+
+									<hr class="major" />
+
+									<h2>Introducción a CSS3</h2>
+									<p align="justify">El nombre hojas de estilo en cascada viene del inglés Cascading Style Sheets, del que toma sus siglas. CSS es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML (y por extensión en XHTML). El W3C(World Wide Web Consortium) es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.</p>
+									<p align="justify">La idea que se encuentra detrás del desarrollo de CSS es separar la estructura de un documento de su presentación. La información de estilo puede ser adjuntada como un documento separado o en el mismo documento HTML. En este último caso podrían definirse estilos generales en la cabecera del documento o en cada etiqueta particular mediante el atributo.</p>
+									<p align="center"><a href="https://www.ecured.cu/CSS3#Introducci.C3.B3n_a_CSS3" target="_blank" class="button">Fuente</a></p>
+
+									<hr class="major" />
+
+									<h2>Estilos y estructura</h2>
+									<p align="justify">A pesar de que cada navegador garantiza estilos por defecto para cada uno de los elementos HTML, estos estilos no necesariamente satisfacen los requerimientos de cada diseñador. Normalmente se encuentran muy distanciados de Io que queremos para nuestros sitios webs. Diseñadores y desarrolladores a menudo deben aplicar sus propios estilos para obtener la organización y el efecto visual que realmente desean.</p>
+
+									<b><i><font size="+1">Elementos Block</font></i></b>
+									<h2>  </h2>
+									<p align="justify">Con respecto a la estructura, básicamente cada navegador ordena los elementos por defecto de acuerdo a su tipo: block (bloque) o inline (en línea). Esta clasificación está asociada con la forma en que los elementos son mostrados en pantalla.</p>
+									<ul><li><p><b>Elementos block</b> son posicionados uno sobre otro hacia abajo en la página."</li></ul></p>
+									<ul><li><p><b>Elementos inline</b> son posicionados lado a lado, uno al lado del otro en la misma línea, sin ningún salto de línea a menos que ya no haya más espacio horizontal para ubicarlos.</li></ul></p>
+									<p align="justify">Casi todos los elementos estructurales en nuestros documentos serán tratados por los navegadores como elementos block por defecto. Esto significa que cada elemento HTML que representa una parte de la organización visual (por ejemplo, <b>&lt;section&gt;, &lt;nav&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;div&gt;</b>)será posicionado debajo del anterior.</p>
+									
+									<hr class="major" />
+
+									<h2>Archivos externos</h2>
+									<p align="justify">Declarar los estilos en la cabecera del documento ahorra espacio y vuelve al código más consistente y actualizable, pero nos requiere hacer una copia de cada grupo de estilos en todos los documentos de nuestro sitio web. La solución es mover todos los estilos a un archivo externo y luego utilizar el elemento para insertar este archivo dentro de cada documento que los necesite. Este método nos permite cambiar los estilos por completo simplemente incluyendo un archivo diferente. También nos permite modificar o adaptar nuestros documentos a cada circunstancia o dispositivo.</p>
+									<p align="justify">Estudiamos la etiqueta <b>&lt;link&gt;</b> y cómo utilizarla para insertar archivos con estilos CSS en nuestros documentos. Utilizando la línea <b>&lt;link rel="stylesheet" href="misestilos.css"&gt;</b> le decimos al navegador que cargue el archivo <i><b>misestilos .css</b></i> porque contiene todos los estilos necesitados para presentar el documento en pantalla. Esta práctica fue ampliamente adoptada por diseñadores que ya están trabajando con HTML5. La etiqueta referenciando el archivo CSS será insertada en cada uno de los documentos que requieren de esos estilos.</p>
+
+									<code>&lt;!DOCTYPE HTML&gt;</code>
+									<br> </br>
+									<code>&lt;html lang="es"&gt;</code>
+									<br> </br>
+								    <code>&lt;head&gt;</code>
+								    <br> </br>
+								    <code>&lt;title&gt;Titulo del documento&lt;/title&gt;</code>
+								    <br> </br>
+								    <code>&lt;link rel="stylesheet" href="misestilos.css"&gt;</code>
+								    <br> </br>
+								    <code>&lt;/head&gt;</code>
+								    <br> </br>
+								    <code>&lt;body&gt;</code>
+								    <br> </br>
+								    <code>&lt;p&gt;Texto alternativo&lt;/p&gt;</code>
+								    <br> </br>
+								    <code>&lt;/body&gt;</code>
+								    <br> </br>
+								    <code>&lt;/html&gt;</code>
+                                    <h2>  </h2>
+								    <em align="justify"><b>Dato</b>: Los archivos CSS son archivos de texto comunes. Al igual que los archivos HTML, puede crearlos utilizando cualquier editor de texto como el Bloc de Notas de Windows, por ejemplo.</em>
+
+                                    <hr class="major" />
+
+									<h2>Referencias</h2>
+									<p align="justify">Almacenar todos nuestros estilos en un archivo externo e insertar este archivo dentro de cada documento que lo necesite es muy conveniente, sin embargo no podremos hacerlo sin buenos mecanismos que nos ayuden a establecer una específica relación entre estos estilos y los elementos del documento que van a ser afectados. Cuando hablábamos sobre cómo incluir estilos en el documento, mostramos una de las técnicas utilizadas a menudo en CSS para referenciar elementos HTML. En el Listado 2-2, el estilo para cambiar el tamaño de la letra referenciaba cada elemento <b><i>&lt;p&gt;</i></b> usando la palabra clave <b><i>p</i></b>. De esta manera el estilo insertado entre las etiquetas <b><i>&lt;style&gt;</i></b> referenciaba cada etiqueta <b><i>&lt;p&gt;</i></b> del documento y asignaba ese estilo particular a cada una de ellas.</p>
+									<p>Existen varios métodos para seleccionar cuáles elementos HTML serán afectados por las reglas CSS:</p>
+									<ul><li><p>Referencia por la palabra clave del elemento </li></ul></p>
+									<ul><li><p>Referencia por el atributo id </li></ul></p>
+									<ul><li><p>Referencia por el atributo clase </li></ul></p>
+
+									<b><i><font size="+1">Referenciando con palabra clave</font></i></b>
+									<h2></h2>
+									<p align="justify">Al declarar las reglas CSS utilizando la palabra clave del elemento afectamos cada elemento de la misma clase en el documento. Por ejemplo, la siguiente regla cambiará los estilos de todos los elementos <b><i>&lt;p&gt;</i></b>:</p>
+									<hr></hr>
+									<p><code>p { font-size: 20px }</code></p>
+									<hr></hr>
+									<p align="justify">Esta es la técnica presentada previamente en el Listado 2-2. Utilizando la palabra clave <b><i>p</i></b> al frente de la regla le estamos diciendo al navegador que esta regla debe ser aplicada a cada elemento <b><i>&lt;p&gt;</i></b>encontrado en el documento HTML. Todos los textos envueltos en etiquetas<b><i>&lt;p&gt;</i></b> tendrán el tamaño de 20 pixeles.</p>
+									<p align="justify">Por supuesto, lo mismo funcionará para cualquier otro elemento HTML. Si especificamos la palabra clave <b><i>span</i></b> en lugar de <b><i>p</i></b>, por ejemplo, cada texto entre etiquetas <b><i>&lt;span&gt;</i></b> tendrá un tamaño de 20 pixeles:</p>
+                                    <hr></hr>
+									<p><code>span { font-size: 20px }</code></p>
+									<hr></hr>
+									<p align="justify">¿Pero qué ocurre si solo necesitamos referenciar una etiqueta específica? ¿Debemos usar nuevamente el atributo <b><i>style</i></b> dentro de esta etiqueta? La respuesta es no. Como aprendimos anteriormente, el método de <b>Estilos en Línea</b> (usando el atributo <b><i>style</i></b> dentro de etiquetas HTML) es una técnica en desuso y debería ser evitada. Para seleccionar un elemento HTML específico desde las reglas de nuestro archivo CSS, podemos usar dos atributos diferentes: <b><i>id</i></b> y <b><i>class</i></b>.</p>
+									<b><i><font size="+1">Referenciando con el atributo id</font></i></b>
+									<h2></h2>
+									<p align="justify">El atributo id es como un nombre que identifica al elemento. Esto significa que el valor de este atributo no puede ser duplicado. Este nombre debe ser único en todo el documento. Para referenciar un elemento en particular usando el atributo id desde nuestro archivo CSS la regla debe ser declarada con el símbolo <b><i>#</i></b> al frente del valor que usamos para identificar el elemento:</p>
+									<hr></hr>
+									<p><code>#texto1 { font-size: 20px }</code></p>
+									<hr></hr>
+									<p align="center"><i> Listado 2-6. Referenciando a través del valor del atributo id.</i></p>
+									<p>La regla en el Listado 2-6 será aplicada al elemento HTML identificado con el atributo  <b><i>id="texto1"</i></b>. Ahora nuestro código HTML lucirá de esta manera: </p>
+									<code>&lt;!DOCTYPE HTML&gt;</code>
+									<br> </br>
+									<code>&lt;html lang="es"&gt;</code>
+									<br> </br>
+								    <code>&lt;head&gt;</code>
+								    <br> </br>
+								    <code>&lt;title&gt;Titulo del documento&lt;/title&gt;</code>
+								    <br> </br>
+								    <code>&lt;link rel="stylesheet" href="misestilos.css"&gt;</code>
+								    <br> </br>
+								    <code>&lt;/head&gt;</code>
+								    <br> </br>
+								    <code>&lt;body&gt;</code>
+								    <br> </br>
+								    <code>&lt;p id="texto1"&gt;Texto alternativo&lt;/p&gt;</code>
+								    <br> </br>
+								    <code>&lt;/body&gt;</code>
+								    <br> </br>
+								    <code>&lt;/html&gt;</code>
+                                    <h2>  </h2>
+                                    <p align="justify">El resultado de este procedimiento es que cada vez que hacemos una referencia usando el identificador <b><i>texto1</b></i> en nuestro archivo CSS, el elemento con ese valor de <b><i>id</b></i> será modificado, pero el resto de los elementos <b><i>&lt;p&gt;</i></b>, o cualquier otro elemento en el mismo documento, no serán afectados.</p>
+                                    <p align="justify">Esta es una forma extremadamente específica de referenciar un elemento y es normalmente utilizada para elementos más generales, como etiquetas estructurales. El atributo <b><i>id</b></i> y su especificidad es de hecho más apropiado para referencias en Javascript.</p>
+                                    <b><i><font size="+1">Referenciando con el atributo class</font></i></b>
+									<h2></h2>
+									<p>La mayoría del tiempo, en lugar de utilizar el atributo <b><i>id</b></i> para propósitos de estilos es mejor utilizar <b><i>class</b></i>. Este atributo es más flexible y puede ser asignado a cada elemento HTML en el documento que comparte un diseño similar:</p>
+									<hr></hr>
+									<p><code>.texto1 { font-size: 20px }</code></p>
+									<hr></hr>
+									<p align="center"><i>Listado 2-8. Referenciando por el valor del atributo class.</i></p>
+									<p>Para trabajar con el atributo <b><i>class</b></i>, debemos declarar la regla CSS con un punto antes del nombre. La ventaja de este método es que insertar el atributo <b><i>class</b></i> con el valor <b><i>texto1</b></i> será suficiente para asignar estos estilos a cualquier elemento que queramos:</p>
+									<code>&lt;!DOCTYPE HTML&gt;</code>
+									<br> </br>
+									<code>&lt;html lang="es"&gt;</code>
+									<br> </br>
+								    <code>&lt;head&gt;</code>
+								    <br> </br>
+								    <code>&lt;title&gt;Titulo del documento&lt;/title&gt;</code>
+								    <br> </br>
+								    <code>&lt;link rel="stylesheet" href="misestilos.css"&gt;</code>
+								    <br> </br>
+								    <code>&lt;/head&gt;</code>
+								    <br> </br>
+								    <code>&lt;body&gt;</code>
+								    <br> </br>
+								    <code>&lt;p class="texto1"&gt;Texto alternativo&lt;/p&gt;</code>
+								    <br> </br>
+								    <code>&lt;p class="texto1"&gt;Texto alternativo&lt;/p&gt;</code>
+								    <br> </br>
+								    <code>&lt;p&gt;Texto alternativo&lt;/p&gt;</code>
+								    <br> </br>
+								    <code>&lt;/body&gt;</code>
+								    <br> </br>
+								    <code>&lt;/html&gt;</code>
+									<hr></hr>
+									<p align="center"><i>Listado 2-9. Asignando estilos a varios elementos a través del atributo class.</i></p>
+									<p align="justify">Los elementos <b><i>&lt;p&gt;</i></b> en las primeras dos líneas dentro del cuerpo del código en el Listado 2-9 tienen el atributo <b><i>class</i></b> con el valor <b><i>texto1</i></b>. Como dijimos previamente, la misma regla puede ser aplicada a diferentes elementos en el mismo documento. Por lo tanto, estos dos primeros elementos comparten la misma regla y ambos serán afectados por el estilo del Listado 2-8. El último elemento <b><i>&lt;p&gt;</i></b> conserva los estilos por defecto otorgados por el navegador</p>
+									<p align="justify">La razón por la que debemos utilizar un punto delante del nombre de la regla es que es posible construir referencias más complejas. Por ejemplo, se puede utilizar el mismo valor para el atributo <b><i>class</i></b> en diferentes elementos pero asignar diferentes estilos para cada tipo:</p>
+									<hr></hr>
+									<p><code>p.texto1 { font-size: 20px }</code></p>
+									<hr></hr>
+									<p align="center"><i>Listado 2-10. Referenciando solo elementos a través del valor del atributo class.</i></p>
+									<p align="justify">En el Listado 2-10 creamos una regla que referencia la clase llamada <b><i>texto1</i></b> pero solo para los elementos de tipo <b><i>&lt;p&gt;</i></b>. Si cualquier otro elemento tiene el mismo valor en su atributo <b><i>class</i></b> no será modificado por esta regla en particular.</p>
+									<p align="center"><a href="https://books.google.es/books?id=szDMlRzwzuUC&lpg=PA1&ots=0ClIWYtDRa&dq=CSS%203&lr&hl=es&pg=PA47#v=onepage&q&f=false" target="_blank" class="button">Fuente</a></p>
+									<p align="center"><a href="#" class="button">Ir al Inicio De Página</a></p>
+		
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2 style="background-color:hsla(242,90%,50%,0.5);">Menu &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li>
+										<span class="opener">Conceptos</span>
+											<ul>
+												<li><a href="contenido.html">Contenido CSS3</a></li>
+												<li><a href="propiedades.html">Propiedades CSS y sus valores</a></li>
+											</ul>
+										</li>
+										<li>
+										<span class="opener">Recursos</span>
+											<ul>
+												<li><a href="multi.html">Podcast + Introducción</a></li>
+												<li><a href="etiquetas.html">Estilos y Etiquetas De Css [Video] </a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">AutoEvaluación</span>
+											<ul>
+												<li><a href="submenu1.html">Sopa De Letras</a></li>
+												<li><a href="Submenu2.html">Crucigrama</a></li>
+												<li><a href="matriz.html">Evaluación Del Sitio</a></li>
+											</ul>
+										</li>
+										<li><a href="personal.html">Autor</a></li>
+										<li><a href="mockup.html">Mockup</a></li>
+										<li><a href="sitemap.html">Sitemap</a></li>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<a class="twitter-timeline" data-width="500" data-height="800" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+										<h2>Curiosidades</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="https://ricardorubiosimon.files.wordpress.com/2014/11/layout2.jpg" class="image" target="_blank"><img src="images/layout.jpg" alt="" /></a>
+											<p align="justify">El layout dentro de CSS es un término que se refiere al cálculo de cuánto espacio requiere un elemento en pantalla. Modificar alguna propiedad del layout, significa que el navegador comprobará el resto de elementos y recompondrá la página, volviendo a mostrar los elementos modificados y componiéndolos como el resto de elementos.</p>
+											<a href="https://marketingaparte.com/boulevard/internet-y-paginas-web/curiosidades-sobre-css-que-no-sabias/" target="_blank" class="button">Fuente</a>
+										</article>
+										<article>
+											<a target="_blank" href="http://www.romancortes.com/blog/homer-css/" class="image"><img src="images/homero.png" alt="" /></a>
+											<p align="justify">De lo mejor que he visto, el autor es Román Cortés y ha hecho a Homero Simpson en la que un mismo archivo html servía de lienzo para los creativos y más diestros con el CSS mostrando las posibilidades que tenía ésta tecnica.</p>
+											<a href="http://www.romancortes.com/blog/homer-css/" target="_blank" class="button">Fuente</a>
+										</article>
+										<article>
+											<a href="https://www.gangboard.com/blog/css-vs-css3" class="image"><img src="images/vs.jpg" alt="" /></a>
+											<p align="justify">CSS3 funciona con modulos mientras que el CSS no lo hace , eso permite que sean compatibles. CSS3 ahorra mucho tiempo ya que no se necesita de otros programas para ciertos efectos. CSS3 carga mucho mas rapido en la web.</p>
+											<a href="http://webmulticriss.blogspot.com/2016/04/diferencias-entre-css-y-css3.html" target="_blank" class="button">Fuente</a>
+										</article>
+									</div>
+									
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/unadd.png" width="200" height="110">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+									<h4>Contacto</h4>
+									</header>
+									<p></p>
+									<ul class="contact">
+
+										<li class="icon solid fa-envelope">sogamoso@unad.edu.co</a></li>
+										<li class="icon solid fa-phone"> ( +57 8 ) 7719197 / ( +57 8 ) 7706645</li>
+										<li class="icon solid fa-home">Calle 5 # 1 - 08<br />
+										Barrio Monquira</li>
+									</ul>
+								</section>
+
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
